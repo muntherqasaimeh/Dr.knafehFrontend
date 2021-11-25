@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/css/bootstrap.min.css" integrity="sha384-B0vP5xmATw1+K9KRQjQERJvTumQW0nPEzvF6L/Z6nronJ3oUOFUFpCjEUQouq2+l" crossorigin="anonymous">
+    <script src="jquery-3.6.0.min.js"></script>
+    <script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
+
+
+    <script>
+        $(document).ready(function(){
+            $("#submitBtn").click(function(){        
+                $("#myForm").submit(); // Submit the form
+                alert("Succesfully operation.");
+            });
+        });
+        </script>
+
+
+
+</head>
+<body>
+    
+        <div class="container">
+            
+      
+
+    <div id="header">
+        <ul id="mainMenu" >
+            <li><a href="html.html" >Back to Home</a></li>
+            <li><a href="Menu.html">Our Menu</a></li>
+            <li><a href="nutrion.html" >Nutrtion Info</a></li>
+           
+            <li><a href="register.html">Register</a></li>
+            
+ 
+ 
+        </ul>
+ 
+ 
+     </div>
+ 
+ <!--header area -->
+
+  <div id="sideArea">
+    <img src="drknafeh.jpg" alt="knafeh" width="100%"
+    height="450px" class = "img-responsive" alt = "Online Training">
+
+
+    </div>
+ 
+<!--Side Area-->
+
+<div id="TextArea"  >
+    <form class="row g-3" style=" width: 70%; padding: auto; margin: auto;" method="POST" id="myForm">
+        <div class="col-md-6">
+          <label for="inputEmail4" class="form-label">Email</label>
+          <input type="email" class="form-control" id="inputEmail4">
+          <div class="error error-txt">Email can't be blank</div>
+        </div>
+        
+        <div class="col-md-6">
+          <label for="inputPassword4" class="form-label">Password</label>
+          <input type="password" class="form-control" id="inputPassword4">
+          <div class="error error-txt">Password can't be blank</div>
+        </div>
+       
+        <div class="col-12">
+          <button type="submit" class="btn btn-primary" id="submitBtn">Login</button>
+        </div>
+        <div class="sign-txt">Not yet member? <a href="register.html">Signup now</a></div>
+  </div>
+      </form>
+</div>
+<!--TEXT AREA -->
+
+
+  <div id="cleaner"></div>
+<!--cleaner area -->
+
+
+
+  
+
+
+ <div id="Footer"class="footer">
+        <h1>About us</h1>
+    <p>only two brothers who were looking for a knafeh with good taste <br>
+         in <strong>Montreal</strong> as like as the <strong>Jordanian knafeh</strong> <br>
+        so they decide to bring the good taste from <strong>Jordan</strong> to <strong>Montreal</strong></p>
+    
+  </div>
+    
+    <!--footer area -->
+
+
+  
+</div>
+
+</body>
+</html>
